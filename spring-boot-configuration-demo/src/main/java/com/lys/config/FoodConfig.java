@@ -2,7 +2,7 @@ package com.lys.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "food")
+@ConfigurationProperties("food")
 public class FoodConfig {
     private String rice;
     private String dishes;

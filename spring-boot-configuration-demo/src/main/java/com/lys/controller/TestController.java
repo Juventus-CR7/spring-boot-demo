@@ -1,7 +1,7 @@
 package com.lys.controller;
 
 import com.lys.config.FoodConfig;
-import com.lys.bean.Food;
+import com.lys.domain.Food;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

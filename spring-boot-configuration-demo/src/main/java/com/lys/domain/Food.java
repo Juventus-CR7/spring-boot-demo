@@ -1,4 +1,4 @@
-package com.lys.bean;
+package com.lys.domain;
 
 public class Food {
     private String rice;
@@ -17,14 +17,6 @@ public class Food {
     }
 
     public void setDishes(String dishes) {
-        this.dishes = dishes;
-    }
-
-    public Food() {
-    }
-
-    public Food(String rice, String dishes) {
-        this.rice = rice;
         this.dishes = dishes;
     }
 }
