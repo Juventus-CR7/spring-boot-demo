@@ -4,3 +4,10 @@ food:
   sauce:
     - 番茄
     - 原味
+jasypt:
+  encryptor:
+    password: 123456!@
+
+test:
+  username: ENC(7SWc34EzED3/ficnGYO8hA==)
+  password: ENC(bry2X5hXKafIFY/Dn1NYMg==)

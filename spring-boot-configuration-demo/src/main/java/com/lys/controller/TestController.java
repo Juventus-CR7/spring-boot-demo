@@ -5,6 +5,7 @@ import com.lys.config.VegetablesConfig;
 import com.lys.domain.Food;
 import com.lys.domain.Vegetables;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,5 +32,19 @@ public class TestController {
         vegetables.setPotato(vegetablesConfig.getPotato());
         vegetables.setTomato(vegetablesConfig.getTomato());
         return vegetables;
+    }
+
+    @Value("${test.username}")
+    private String username;
+    @Value("${test.password}")
+    private String password;
+
+    @RequestMapping("/jasytp")
+    public String testJasytp(){
+        StringBuilder builder = new StringBuilder();
+        builder.append(username);
+        builder.append("\t");
+        builder.append(password);
+        return builder.toString();
     }
 }
