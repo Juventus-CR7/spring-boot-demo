@@ -9,5 +9,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class FoodConfig {
     private String rice;
     private String dishes;
-
+    private String[]sauce;
 }

@@ -18,6 +18,7 @@ public class TestController {
         Food food = new Food();
         food.setRice(foodConfig.getRice());
         food.setDishes(foodConfig.getDishes());
+        food.setSauce(foodConfig.getSauce());
         return food;
     }
 

@@ -1,0 +1,6 @@
+food:
+  rice: 米饭
+  dishes: 菜
+  sauce:
+    - 番茄
+    - 原味
