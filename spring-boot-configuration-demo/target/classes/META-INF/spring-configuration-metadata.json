@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "food",
+      "type": "com.lys.config.FoodConfig",
+      "sourceType": "com.lys.config.FoodConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "food.dishes",
+      "type": "java.lang.String",
+      "sourceType": "com.lys.config.FoodConfig"
+    },
+    {
+      "name": "food.rice",
+      "type": "java.lang.String",
+      "sourceType": "com.lys.config.FoodConfig"
+    }
+  ],
+  "hints": []
+}
