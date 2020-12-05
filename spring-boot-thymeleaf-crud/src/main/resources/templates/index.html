@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.5/css/bootstrap.min.css" />
+</head>
+<body>
+
+    <h2>打工人管理系统</h2><br>
+    <table class="table table-hover" id="table">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>职位</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="worker:${workerList}">
+                <td th:text="${worker.name}">name</td>
+                <td th:text="${worker.role}">role</td>
+                <td class="col-sm-2">
+                    <a th:href="@{/toUpdate(name=${worker.name})}" class="btn btn-info">编辑</a>
+                </td>
+                <td class="col-sm-2">
+                    <a th:href="@{/toDelete(name=${worker.name})}" class="btn btn-info">删除</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form-group">
+        <div class="col-sm-2 control-label">
+            <a href="/toAdd" th:href="@{/toAdd}"
+               class="btn btn-info">添加</a>
+        </div>
+    </div>
+
+</body>
+</html>
