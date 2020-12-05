@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span th:text="${text}">text</span><br>
+
+    <div th:object="${person}">
+        <p>Name: <span th:text="*{name}">Sebastian</span>.</p>
+        <p>sex: <span th:text="*{sex}">Pepper</span>.</p>
+    </div>
+
+    <a href="http://www.baidu.com" th:href="@{/test}">welcome</a>
+
+<!--    <p th:utext="#{test}">test</p>-->
+
+    <div th:insert="footer :: copy"></div>
+    <div th:replace="footer :: copy"></div>
+    <div th:include="footer :: copy"></div>
+</body>
+</html>

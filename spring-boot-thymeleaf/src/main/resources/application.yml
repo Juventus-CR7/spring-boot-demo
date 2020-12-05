@@ -1,0 +1,13 @@
+server:
+  port: 8090
+
+spring:
+  mvc:
+    view:
+      suffix: /templates/
+      prefix: .html
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
