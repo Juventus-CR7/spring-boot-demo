@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/testmybatis?useSSL=false&characterEncoding=UTF-8
+      username: "root"
+      password: "010127"
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/testmybatis2?useSSL=false&characterEncoding=UTF-8
+      username: "root"
+      password: "010127"

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>pid</th>
+                <th>pname</th>
+                <th>cardid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="person:${personList}">
+                <td th:text="${person.pid}">pid</td>
+                <td th:text="${person.pname}">pname</td>
+                <td th:text="${person.cardid}">cardid</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
